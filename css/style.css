@@ -1,0 +1,50 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  background-color: #151515
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  transform: scale(1.5)
+}
+input{
+  height: 50px;
+  text-align: end;
+  padding: 0 5px;
+  font-size: 1.3rem;
+  font-family: 'Space Mono', monospace;
+  background-color: white;
+  border: 0;
+  user-select: none;
+}
+input:focus{
+  outline: none;
+}
+button{
+  padding: 15px 10px;
+  outline: none;
+  border: none;
+  background-color: #252525;
+  color: #EEE;
+  font-family: 'Space Mono', monospace;
+  transition: 0.1s;
+}
+button:active{
+  color: #EEE;
+  background-color: #1DB954
+}
+#equal {
+  color: white;
+  background-color:  #1DB954;
+  width: calc(100% * 2);
+}
+#equal:active{
+  background-color: rgba(29, 185, 84, .5)
+}
